@@ -25,4 +25,11 @@ public class Banco {
         saldo = saldo - valor;
         scanner.close();
     }
+    public void Depositar(int valor){
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Qual é o valor do depósito?: ");
+        valor = scanner.nextInt();
+        saldo = saldo + valor;
+        scanner.close();
+    }
 }
